@@ -1,0 +1,26 @@
+modules:
+  jira:projectPage:
+    - key: jira-sub-page-hello-world-project-page
+      resource: main
+      title: Jira sub page
+      layout: basic
+      sections:
+        - pages:
+            - title: Intro
+              route: /landing-page
+            - title: Another Page
+              route: /another-page
+        - header: With Parameters
+          pages:
+            - title: "Using Parameter: foo"
+              route: /with-parameter/foo
+            - title: "Using Parameter: bar"
+              route: /with-parameter/bar
+
+resources:
+  - key: main
+    path: static/hello-world/build
+    tunnel:
+      port: 5000
+app:
+  id: ari:cloud:ecosystem::app/65447af9-73a6-4a2b-8c9c-03ab9603dd69
