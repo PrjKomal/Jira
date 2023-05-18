@@ -8,7 +8,7 @@ modules:
         - pages:
             - title: Intro
               route: /landing-page
-            - title: Another Page
+            - title: Bye Page
               route: /another-page
         - header: With Parameters
           pages:

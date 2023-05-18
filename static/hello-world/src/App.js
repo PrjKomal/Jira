@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import Button from "@atlaskit/button/standard-button";
+import Button from "@atlaskit/button";
 import { view } from "@forge/bridge";
 
 function LandingPage() {
@@ -51,7 +51,7 @@ function AnotherPage() {
         Example of programmatic routing:
         <br />
       </p>
-      <Button appearance="primary" onClick={handleClick} style={{ fontSize: '20px', color: 'white', background: '#0052CC', border: '2px solid #0052CC' }}>
+      <Button appearance="primary" onClick={handleClick} >
         Click to navigate to next page
       </Button>
       <p>
